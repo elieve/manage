@@ -35,7 +35,7 @@ log = logging.getLogger('[Telethon]')
 logging.getLogger('ptbcontrib.postgres_persistence.postgrespersistence').setLevel(logging.WARNING)
 log.info("[TELEGRAM] Bot is starting. | An Telethon Project. | Licensed under GPLv3.")
 log.info("[TELEGRAM] Not affiliated to Azur Lane or Yostar in any way whatsoever.")
-log.info("[TELEGRAM] Project maintained by: github.com/ITZ-ZAID (t.me/Timesisnotwaiting)")
+log.info("[TELEGRAM] Project maintained by: github.com/elieve (https://t.me/baytoddd)")
 
 # if version < 3.6, stop bot.
 if sys.version_info[0] < 3 or sys.version_info[1] < 7:
@@ -82,8 +82,8 @@ class AnieINIT:
         self.LASTFM_API_KEY: str = self.parser.get('LASTFM_API_KEY', None)
         self.CF_API_KEY: str =  self.parser.get("CF_API_KEY", None)
         self.bot_id = 0 #placeholder
-        self.bot_name = "Anie" #placeholder
-        self.bot_username = "AnieRobot_bot" #placeholder
+        self.bot_name = "Elieve" #placeholder
+        self.bot_username = "elievemusicbot" #placeholder
         self.DEBUG: bool = self.parser.getboolean("IS_DEBUG", False)
         self.DROP_UPDATES: bool = self.parser.getboolean("DROP_UPDATES", True)
         self.BOT_API_URL: str = self.parser.get('BOT_API_URL', "https://api.telegram.org/bot")
@@ -106,7 +106,7 @@ class AnieINIT:
 
 ZInit = Config
 ZZInit = AnieINIT
-ZAID_USER = 1669178360
+
 SYS_ADMIN = ZInit.SYS_ADMIN
 OWNER_ID = ZInit.OWNER_ID
 OWNER_USERNAME = ZInit.OWNER_USERNAME
@@ -143,8 +143,8 @@ CF_API_KEY = ZInit.CF_API_KEY
 # SpamWatch
 sw = ZZInit.init_sw()
 
-API_HASH = '4e984ea35f854762dcde906dce426c2d'
-API_ID = '6435225'
+API_HASH = ''
+API_ID = ''
 STRING_SESSION = ZInit.STRING_SESSION
 WORKERS = 8
 
