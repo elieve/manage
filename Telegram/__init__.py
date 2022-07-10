@@ -46,7 +46,6 @@ if sys.version_info[0] < 3 or sys.version_info[1] < 7:
 
 parser = ConfigParser()
 parser.read("config.ini")
-zconfig = parser["zaidconfig"]
 
 class AnieINIT:
     def __init__(self, parser: ConfigParser):
@@ -143,8 +142,6 @@ CF_API_KEY = ZInit.CF_API_KEY
 # SpamWatch
 sw = ZZInit.init_sw()
 
-API_HASH = ''
-API_ID = ''
 STRING_SESSION = ZInit.STRING_SESSION
 WORKERS = 8
 
@@ -152,7 +149,7 @@ from Telegram.modules.sql import SESSION
 
 updater = tg.Updater(TOKEN, workers=WORKERS, use_context=True)
 telethn = TelegramClient(MemorySession(), APP_ID, API_HASH)
-ubot2 = TelegramClient(StringSession(STRING_SESSION), API_ID, API_HASH)
+ubot2 = TelegramClient(StringSession(STRING_SESSION), APP_ID, API_HASH)
 try:
     ubot2.start()
 except BaseException:
