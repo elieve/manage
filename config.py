@@ -12,7 +12,7 @@ class Config(object):
     API_HASH = getenv("API_HASH", "3fdb18b5d47c107279014b5e6b120dda")
     TOKEN = getenv("TOKEN", "5416154782:AAFEIUmrqpfa-QAhXbozcHA1MW_gj757-lw")
     OWNER_ID = getenv("OWNER_ID", "12479561")
-    STRING_SESSION = getenv("STRING_SESSION", "")
+    STRING_SESSION = getenv("STRING_SESSION", "1BVtsOGgBu2wESU4f7_aFcA6iVBXv3AWaX1O0w3EmzpTTuGZS62ybmE_v6nMfO4bEpSJQ_7s0exMkN_hpHJtdaoQ3kYsWJIm6_gUDMD_8xAOQkqM1w7QVcXPCVeBImNOt-WjmWXh7LwXWjzppAVDN-R81yVJTsKDrRbC-WZsudDLbm_EACyNG9F2T-mko-D0iCRQRX0x2CBX27du4WqZYEg3I1MtLjyY5vKuf3E0BlUN_3T2m4tJXnIYBDoIemLmjLWJNjuAlHsZLJYJhbWO--aSlTqy4VoGVklr_GgsTju28752Mh_wG17qjlhjTaQa_cOskhjZyYbiMhhE7q7LLiu2hrQbnMzI=")
     OWNER_USERNAME = getenv("OWNER_USERNAME", "baytoddd")
     DB_URI = getenv("DATABASE_URL", "postgresql://sqfasbbh:gZB4IVNwh3tKHMQjLkEbaCjHXcXDJ24l@abul.db.elephantsql.com/sqfasbbh")
     MESSAGE_DUMP = getenv("MESSAGE_DUMP", "-1001763422160")
