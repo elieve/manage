@@ -8,17 +8,17 @@ if os.path.exists("local.env"):
 load_dotenv()
 class Config(object):
     log = True
-    APP_ID = getenv("API_ID", "6435225")
-    API_HASH = getenv("API_HASH", "4e984ea35f854762dcde906dce426c2d")
-    TOKEN = getenv("TOKEN", "")
-    OWNER_ID = getenv("OWNER_ID")
+    APP_ID = getenv("API_ID", "12479561")
+    API_HASH = getenv("API_HASH", "3fdb18b5d47c107279014b5e6b120dda")
+    TOKEN = getenv("TOKEN", "5416154782:AAFEIUmrqpfa-QAhXbozcHA1MW_gj757-lw")
+    OWNER_ID = getenv("OWNER_ID", "12479561")
     STRING_SESSION = getenv("STRING_SESSION", "")
-    OWNER_USERNAME = getenv("OWNER_USERNAME", "")
-    DB_URI = getenv("DATABASE_URL", "")
-    MESSAGE_DUMP = getenv("MESSAGE_DUMP", "-1001509525202")
-    GBAN_LOGS = getenv("GBAN_LOGS", "-1001509525202")
-    SYS_ADMIN = getenv("SYS_ADMIN", "1669178360")
-    DEV_USERS = getenv("DEV_USERS", "1669178360")
+    OWNER_USERNAME = getenv("OWNER_USERNAME", "baytoddd")
+    DB_URI = getenv("DATABASE_URL", "postgresql://sqfasbbh:gZB4IVNwh3tKHMQjLkEbaCjHXcXDJ24l@abul.db.elephantsql.com/sqfasbbh")
+    MESSAGE_DUMP = getenv("MESSAGE_DUMP", "-1001763422160")
+    GBAN_LOGS = getenv("GBAN_LOGS", "-1001763422160")
+    SYS_ADMIN = getenv("SYS_ADMIN", "12479561")
+    DEV_USERS = getenv("DEV_USERS", "12479561")
     LOAD = getenv("LOAD")
     WEBHOOK = False
     SPB_MODE = True
