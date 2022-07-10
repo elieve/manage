@@ -96,9 +96,9 @@ def send_help(chat_id, text, keyboard=None):
 
     if not keyboard:
         kb = paginate_modules(0, HELPABLE, "help")
-         kb.append([InlineKeyboardButton(text='Support', url='https://t.me/ygabutkan'),
-                   InlineKeyboardButton(text='Back', callback_data='start_back'),
-                   InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
+         #kb.append([InlineKeyboardButton(text='Support', url='https://t.me/ygabutkan'),
+                  # InlineKeyboardButton(text='Back', callback_data='start_back'),
+                #   InlineKeyboardButton(text="Try inline", switch_inline_query_current_chat="")])
         keyboard = InlineKeyboardMarkup(kb)
     dispatcher.bot.send_message(
         chat_id=chat_id, text=text, parse_mode=ParseMode.MARKDOWN, reply_markup=keyboard
@@ -159,7 +159,7 @@ def start(update: Update, context: CallbackContext):  # sourcery no-metrics
                             ),
                             InlineKeyboardButton(
                                 text=gs(chat.id, "source_btn"),
-                                url="https://github.com/ITZ-ZAID/Telegram",
+                                url="https://t.me/ygabutkan",
                             ),
                         ],
                         [
